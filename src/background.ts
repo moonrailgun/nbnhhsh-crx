@@ -1,8 +1,17 @@
+import * as $ from 'jquery';
 
-function polling() {
-    console.log('polling');
-    setTimeout(polling, 1000 * 30);
-}
+const API_URL = 'https://lab.magiconch.com/api/nbnhhsh/';
 
-polling();
+chrome.runtime.onMessage.addListener(function (request, sender, callback) {
+  const { guess } = request;
 
+  if (guess) {
+    const text = guess.match(/[a-z0-9]+/gi).join(','); // 分离出一段文字中的文本, 用逗号拼接
+
+    $.post(`${API_URL}guess`, { text }, (data) => {
+      callback(data);
+    });
+  }
+
+  return true;
+});

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Getting Started Extension's Popup</title>
+    <title>Popup</title>
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
@@ -12,13 +12,17 @@
     <script src="js/vendor.js"></script>
   </head>
   <body>
-    <ul style="min-width: 700px;">
-    <li>Current URL: <span id="url"></span></li>
-    <li>Current Time: <span id="time"></span></li>
-    </ul>
-    <button id="countUp">count up</button>
-    <button id="changeBackground">change background</button>
+    <div id="search">
+      <input id="input" placeholder="请输入想要查询的内容, 多个内容用逗号分隔" />
+      <button id="searchBtn">查询</button>
+    </div>
+    <div id="query">
+      <ul style="min-width: 460px;">
+        <li>查询文本: <span id="guessText"></span></li>
+        <li>结果: <span id="result"></span></li>
+      </ul>
+    </div>
+
     <script src="js/popup.js"></script>
   </body>
 </html>
-
