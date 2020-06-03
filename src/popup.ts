@@ -1,4 +1,5 @@
 import * as $ from 'jquery';
+import './style/popup.less';
 
 const guess = (text: string) => {
   chrome.runtime.sendMessage(
