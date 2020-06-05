@@ -7,6 +7,7 @@
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
+        margin: 0;
       }
     </style>
     <script src="js/vendor.js"></script>
@@ -14,13 +15,25 @@
   <body>
     <div id="nbnhhsh">
       <div id="search">
-        <input id="input" placeholder="请输入想要查询的内容, 多个内容用逗号分隔" />
+        <input id="input" placeholder="请输入想要查询的内容, 多个内容用逗号分隔" autofocus />
         <button id="searchBtn">查询</button>
       </div>
       <div id="query">
-        <ul style="min-width: 460px;">
-          <li>查询文本: <span id="guessText"></span></li>
-          <li>结果: <span id="result"></span></li>
+          <div class="text"><span id="guessText"></span></div>
+
+          <div class="tip">输入任意想要查询的内容或者在页面上选中后打开拓展程序</div>
+
+          <div class="loading" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div id="result">
+            <div class="item"></div>
+          </div>
         </ul>
       </div>
     </div>
