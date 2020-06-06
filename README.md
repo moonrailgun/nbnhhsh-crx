@@ -12,6 +12,9 @@ Chrome Extension for nbnhhsh 能不能好好说话Chrome插件版
 
 仅支持英文字符输入
 
+![](./docs/1.png)
+![](./docs/2.png)
+
 ## 油猴脚本
 
 - [https://greasyfork.org/zh-CN/scripts/398555](https://greasyfork.org/zh-CN/scripts/398555)
