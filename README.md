@@ -4,6 +4,12 @@ Chrome Extension for nbnhhsh 能不能好好说话Chrome插件版
 原作者与后台服务提供: [@itorr](https://github.com/itorr)
 原版：https://github.com/itorr/nbnhhsh
 
+## Feature
+
+- 打开时自动解析与翻译选中文本中的英文内容
+- 批量翻译
+- 结果缓存
+
 ## Usage
 
 点开拓展弹出框
